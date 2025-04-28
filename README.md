@@ -1,65 +1,111 @@
 Task Manager Web App (Streamlit)
-A simple Task Manager web application built with Streamlit in Python. Users can add, edit, delete, and mark tasks as complete, with data persisted in the session state during the app's runtime.
-Features
+A simple and efficient Task Manager web application built with Streamlit and Python.
+Users can add, edit, delete, and mark tasks as complete, with task categories and color-coded labels for better organization.
+All data is persisted within the session state during the app's runtime.
 
-Add new tasks
-Edit existing tasks
-Delete tasks
-Mark tasks as complete/incomplete (with strikethrough for completed tasks)
-Responsive design via Streamlit
-Session state persistence (tasks persist during the session)
+✨ Features
+➕ Add new tasks with a category (Work, Personal, Urgent, Other)
 
-Tech Stack
+✏️ Edit existing tasks and their categories
 
-Python: Core programming language
-Streamlit: Framework for building the web app
+🗑️ Delete tasks
 
-Getting Started
+✅ Mark tasks as complete/incomplete (completed tasks appear with strikethrough)
+
+🏷️ Color-coded category labels for tasks
+
+🔍 Filter tasks by category
+
+📱 Responsive and user-friendly UI with Streamlit
+
+💾 Session state persistence (tasks persist during the active session)
+
+🛠 Tech Stack
+Python — Core programming language
+
+Streamlit — Framework for building the web application
+
+🚀 Getting Started
 Prerequisites
-
 Python 3.7 or higher
+
 Streamlit (pip install streamlit)
 
 Installation
+Clone the repository
 
-Clone the repository:git clone https://github.com/your-username/task-manager.git
+bash
+Copier
+Modifier
+git clone https://github.com/Imane-Azza/task-manager.git
+Navigate to the project directory
 
+bash
+Copier
+Modifier
+cd task-manager
+Install dependencies
 
-Navigate to the project directory:cd task-manager
+bash
+Copier
+Modifier
+pip install streamlit
+Run the app
 
+bash
+Copier
+Modifier
+streamlit run task_manager.py
+Once started, Streamlit will open the app automatically in your default browser at http://localhost:8501.
 
-Install the required dependencies:pip install streamlit
+📋 Usage
+Add a Task: Enter a task description, select a category (Work, Personal, Urgent, Other), and click "Add Task".
 
+Edit a Task: Click "Edit" next to a task, update its text and/or category, and click "Save".
 
-Run the app:streamlit run task_manager.py
+Delete a Task: Click "Delete" next to a task to remove it.
 
-Streamlit will automatically open the app in your default browser at http://localhost:8501.
+Mark as Complete: Use the checkbox to mark tasks as completed (completed tasks are shown with a strikethrough).
 
-Usage
+Filter Tasks: Select a category from the dropdown to filter tasks, or view all tasks.
 
-Add a Task: Enter a task in the input field and click "Add Task".
-Edit a Task: Click the "Edit" button next to a task, modify the text, and click "Save".
-Delete a Task: Click the "Delete" button next to a task.
-Complete a Task: Check the checkbox to mark a task as complete (strikes through the text).
-Note: Tasks are stored in the session state and will reset when the app session ends.
+Note:
+Tasks are saved only during the current session. Restarting or refreshing the app will reset the tasks.
 
-Project Structure
+📁 Project Structure
+bash
+Copier
+Modifier
 task-manager/
 ├── task_manager.py  # Main application file
-└── README.md       # Project documentation
+└── README.md        # Project documentation
+🤝 Contributing
+We welcome contributions! To contribute:
 
-Contributing
-Contributions are welcome! Please follow these steps:
+Fork the repository
 
-Fork the repository.
-Create a new branch (git checkout -b feature/your-feature).
-Make your changes and commit (git commit -m 'Add your feature').
-Push to the branch (git push origin feature/your-feature).
-Open a Pull Request.
+Create a new branch
+
+bash
+Copier
+Modifier
+git checkout -b feature/your-feature
+Make your changes and commit them
+
+bash
+Copier
+Modifier
+git commit -m "Add your feature"
+Push to your branch
+
+bash
+Copier
+Modifier
+git push origin feature/your-feature
+Open a Pull Request and describe your changes.
 
 
-Acknowledgements
-
+🙏 Acknowledgements
 Streamlit
-Python
 
+Python
